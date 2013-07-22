@@ -1,10 +1,12 @@
-# .
+# Consulting is hard: Part 1
 
 !SLIDE
 
-# A Title Slide
+# Consulting is hard: Part 1
 
-## me@example.com
+## Matt Gauger
+### July 2013
+
 
 !SLIDE
 

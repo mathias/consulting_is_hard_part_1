@@ -1,0 +1,80 @@
+/* line 13, ../scss/base.scss */
+html {
+  font-size: 20px;
+}
+
+/* line 17, ../scss/base.scss */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f1efa5;
+}
+
+/* line 25, ../scss/base.scss */
+.keydown.deck-container .slide {
+  background-color: #554236;
+}
+/* line 29, ../scss/base.scss */
+.keydown.deck-container h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #60b99a;
+}
+/* line 34, ../scss/base.scss */
+.keydown.deck-container h1.section-header {
+  color: #60b99a;
+  font-size: 6rem;
+}
+/* line 39, ../scss/base.scss */
+.keydown.deck-container h2 {
+  font-size: 3.75rem;
+  color: #f77825;
+}
+/* line 44, ../scss/base.scss */
+.keydown.deck-container h3 {
+  font-size: 3rem;
+  color: #d3ce3d;
+}
+/* line 49, ../scss/base.scss */
+.keydown.deck-container h4 {
+  font-size: 2.25rem;
+  color: #d3ce3d;
+}
+/* line 54, ../scss/base.scss */
+.keydown.deck-container li {
+  font-size: 3rem;
+  color: #60b99a;
+}
+/* line 59, ../scss/base.scss */
+.keydown.deck-container p {
+  font-size: 2rem;
+  color: #60b99a;
+}
+/* line 64, ../scss/base.scss */
+.keydown.deck-container blockquote {
+  font-style: italic;
+  padding: 1em 2em;
+  border-left: 5px solid #60b99a;
+}
+/* line 69, ../scss/base.scss */
+.keydown.deck-container blockquote p {
+  margin: 0;
+  font-size: 3rem;
+}
+/* line 74, ../scss/base.scss */
+.keydown.deck-container blockquote cite {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+/* line 82, ../scss/base.scss */
+.keydown.deck-container a, .keydown.deck-container a:hover, .keydown.deck-container a:focus, .keydown.deck-container a:active, .keydown.deck-container a:visited {
+  color: #f77825;
+  text-decoration: none;
+}
+/* line 87, ../scss/base.scss */
+.keydown.deck-container a:hover, .keydown.deck-container a:focus {
+  color: #60b99a;
+  text-decoration: underline;
+}

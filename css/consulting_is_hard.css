@@ -1,12 +1,680 @@
-/* Custom CSS for your KeyDown presentation here */
+.csstransitions.csstransforms {
+  overflow-x: hidden;
+}
 
-/* Uncomment to turn off deck.js navigation */
-/*.deck-prev-link,*/
-/*.deck-next-link {*/
-    /*display: none;*/
-/*}*/
+.csstransitions.csstransforms .deck-container > .slide {
+  -webkit-transition: 0 500ms ease-in-out;
+  -moz-transition: 0 500ms ease-in-out;
+  -ms-transition: 0 500ms ease-in-out;
+  -o-transition: 0 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+}
 
-/* Uncomment to turn off deck.js status */
-/*.deck-status {*/
-    /*display: none;*/
-/*}*/
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 48px;
+}
+
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide .slide {
+  position: relative;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0 500ms ease-in-out, opacity 500ms ease-in-out;
+  -moz-transition: 0 500ms ease-in-out, opacity 500ms ease-in-out;
+  -ms-transition: 0 500ms ease-in-out, opacity 500ms ease-in-out;
+  -o-transition: 0 500ms ease-in-out, opacity 500ms ease-in-out;
+  transition: 0 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide .deck-next,.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide .deck-after {
+  visibility: visible;
+  -webkit-transform: translate3d(200%,0,0);
+  -moz-transform: translate(200%,0);
+  -ms-transform: translate(200%,0);
+  -o-transform: translate(200%,0);
+  transform: translate3d(200%,0,0);
+}
+
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide .deck-before,.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide .deck-previous {
+  opacity: 0.4;
+}
+
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .deck-previous {
+  -webkit-transform: translate3d(-200%,0,0);
+  -moz-transform: translate(-200%,0);
+  -ms-transform: translate(-200%,0);
+  -o-transform: translate(-200%,0);
+  transform: translate3d(-200%,0,0);
+}
+
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .deck-before {
+  -webkit-transform: translate3d(-400%,0,0);
+  -moz-transform: translate(-400%,0);
+  -ms-transform: translate(-400%,0);
+  -o-transform: translate(-400%,0);
+  transform: translate3d(-400%,0,0);
+}
+
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .deck-next {
+  -webkit-transform: translate3d(200%,0,0);
+  -moz-transform: translate(200%,0);
+  -ms-transform: translate(200%,0);
+  -o-transform: translate(200%,0);
+  transform: translate3d(200%,0,0);
+}
+
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .deck-after {
+  -webkit-transform: translate3d(400%,0,0);
+  -moz-transform: translate(400%,0);
+  -ms-transform: translate(400%,0);
+  -o-transform: translate(400%,0);
+  transform: translate3d(400%,0,0);
+}
+
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .deck-before .slide,.csstransitions.csstransforms .deck-container:not(.deck-menu) > .deck-previous .slide {
+  visibility: visible;
+}
+
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .deck-child-current {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+.csstransforms .deck-container .slide h2 {
+  border: none;
+}
+
+.keydown.deck-container {
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+
+.keydown.deck-container h1 {
+  font-family: 'Love Ya Like A Sister', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 800;
+  text-align: none;
+}
+
+.keydown.deck-container h2,.keydown.deck-container h3,.keydown.deck-container h4,.keydown.deck-container h5,.keydown.deck-container p,.keydown.deck-container li {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.keydown.deck-container h2 {
+  font-size: 3.75rem;
+}
+
+.keydown.deck-container h3 {
+  font-size: 3rem;
+}
+
+.keydown.deck-container h4 {
+  font-size: 2.25rem;
+}
+
+.keydown.deck-container .deck-status {
+  font-size: .75rem;
+}
+
+.keydown.deck-container .slide {
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+
+.keydown.deck-container .slide.full-background {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-box-align: start;
+  box-align: start;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-box-pack: start;
+  box-pack: start;
+}
+
+.keydown.deck-container .slide.full-background h1 {
+  display: inline;
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
+  font-weight: 400;
+  font-size: 3.5rem;
+  padding: 1rem;
+  color: #eee;
+}
+
+.keydown.deck-container .slide.full-background.bottom-left h1 {
+  left: 0;
+  bottom: 20%;
+}
+
+.keydown.deck-container .slide.full-background.top-left h1 {
+  left: 0;
+  top: 20%;
+}
+
+.keydown.deck-container .slide.full-background.bottom-right h1 {
+  right: 0;
+  bottom: 20%;
+}
+
+.keydown.deck-container .slide.full-background.top-right h1 {
+  right: 0;
+  top: 20%;
+}
+
+.keydown.deck-container .slide.left {
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-box-align: start;
+  box-align: start;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-box-pack: start;
+  box-pack: start;
+}
+
+.keydown.deck-container .slide.left .spacer.top {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+}
+
+.keydown.deck-container .slide.left .spacer.bottom {
+  -webkit-box-flex: 5;
+  -moz-box-flex: 5;
+  -ms-box-flex: 5;
+  box-flex: 5;
+}
+
+.keydown.deck-container .slide.left .content {
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-box-align: start;
+  box-align: start;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-box-pack: start;
+  box-pack: start;
+}
+
+.keydown.deck-container .slide.left .content > * {
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-box-align: start;
+  box-align: start;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-box-pack: start;
+  box-pack: start;
+}
+
+.keydown.deck-container .slide .content {
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+
+.keydown.deck-container .slide .content > * {
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+
+.keydown.deck-container .slide .content .CodeMirror {
+  font-size: 1rem;
+}
+
+.keydown.deck-container .slide .attribution {
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.25rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.keydown.deck-container .slide .attribution.flickr {
+  background: url(../images/flickr.png) left top no-repeat;
+  padding-left: 60px;
+}
+
+.keydown.deck-container .slide .attribution.cc {
+  background: url(../images/cc.large.png) left top no-repeat;
+  padding-left: 36px;
+}
+
+.keydown.deck-container .slide .attribution a {
+  color: #F77825;
+}
+
+/* Reset deck.core.css */
+.keydown.deck-container h1 {
+  font-weight: 400;
+  text-align: left;
+  padding-top: 0;
+}
+
+/* Reset deck.core.css */
+.csstransforms .deck-container .slide h1 {
+  padding: 0;
+  left: auto;
+  right: auto;
+  top: auto;
+  position: relative;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+.csstransforms .deck-container .slide h2 {
+  border: none;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.keydown.deck-container {
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+
+.keydown.deck-container h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #D3CE3D;
+  text-align: none;
+}
+
+.keydown.deck-container h2,.keydown.deck-container h3,.keydown.deck-container h4,.keydown.deck-container h5,.keydown.deck-container p,.keydown.deck-container li {
+  font-weight: 400;
+}
+
+.keydown.deck-container .keydown.deck-container .deck-status {
+  font-size: .75rem;
+}
+
+.keydown.deck-container .slide {
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+
+.keydown.deck-container .slide.full-background {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-box-align: start;
+  box-align: start;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-box-pack: start;
+  box-pack: start;
+}
+
+.keydown.deck-container .slide.full-background.test {
+  background-image: url(../images/test.png);
+}
+
+.keydown.deck-container .slide.full-background h1 {
+  display: inline;
+  position: absolute;
+  font-weight: 400;
+  font-size: 3.5rem;
+  padding: 1rem;
+}
+
+.keydown.deck-container .slide.full-background.bottom-left h1 {
+  left: 0;
+  bottom: 20%;
+}
+
+.keydown.deck-container .slide.full-background.top-left h1 {
+  left: 0;
+  top: 20%;
+}
+
+.keydown.deck-container .slide.full-background.bottom-right h1 {
+  right: 0;
+  bottom: 20%;
+}
+
+.keydown.deck-container .slide.full-background.top-right h1 {
+  right: 0;
+  top: 20%;
+}
+
+.keydown.deck-container .slide.left {
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-box-align: start;
+  box-align: start;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-box-pack: start;
+  box-pack: start;
+}
+
+.keydown.deck-container .slide.left .spacer.top {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+}
+
+.keydown.deck-container .slide.left .spacer.bottom {
+  -webkit-box-flex: 5;
+  -moz-box-flex: 5;
+  -ms-box-flex: 5;
+  box-flex: 5;
+}
+
+.keydown.deck-container .slide.left .content {
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-box-align: start;
+  box-align: start;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-box-pack: start;
+  box-pack: start;
+}
+
+.keydown.deck-container .slide.left .content > * {
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-box-align: start;
+  box-align: start;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-box-pack: start;
+  box-pack: start;
+}
+
+.keydown.deck-container .slide .content {
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+
+.keydown.deck-container .slide .content > * {
+  display: 0;
+  display: 0;
+  display: 0;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+
+.keydown.deck-container .slide .content .CodeMirror {
+  font-size: 1.75rem;
+  background-color: #554236;
+}
+
+.deck-container .slide .CodeMirror-gutter-text {
+  background-color: #554236;
+  color: #4E4D4A;
+}
+
+.keydown.deck-container .slide .attribution {
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.25rem;
+}
+
+.keydown.deck-container .slide .attribution.flickr {
+  background: url(../images/flickr.png) left top no-repeat;
+  padding-left: 60px;
+}
+
+.keydown.deck-container .slide .attribution.cc {
+  background: url(../images/cc.large.png) left top no-repeat;
+  padding-left: 36px;
+}
+
+.keydown.deck-container .slide .attribution a {
+  color: #F77825;
+}
+
+.deck-container {
+  font-size: 1.25em;
+}
+
+
+.deck-container ::-moz-selection {
+  background: #607818;
+  color: #000;
+}
+
+.deck-container ::selection {
+  background: #607818;
+  color: #000;
+}
+
+
+.deck-container .deck-prev-link,.deck-container .deck-next-link {
+  background: #ccc;
+  font-family: serif;
+}
+
+.deck-container .deck-prev-link,.deck-container .deck-prev-link:hover,.deck-container .deck-prev-link:focus,.deck-container .deck-prev-link:active,.deck-container .deck-prev-link:visited,.deck-container .deck-next-link,.deck-container .deck-next-link:hover,.deck-container .deck-next-link:focus,.deck-container .deck-next-link:active,.deck-container .deck-next-link:visited {
+  color: #fff;
+}
+
+.deck-container .deck-prev-link:hover,.deck-container .deck-prev-link:focus,.deck-container .deck-next-link:hover,.deck-container .deck-next-link:focus {
+  background: #AEE239;
+  text-decoration: none;
+}
+
+.deck-container .deck-status {
+  font-size: .6666em;
+}
+
+.deck-container.deck-menu .slide {
+  background: #eee;
+}
+
+.deck-container.deck-menu .deck-current,.no-touch .deck-container.deck-menu .slide:hover {
+  background: #ddf;
+}

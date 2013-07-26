@@ -1,0 +1,22 @@
+/* Reset deck.core.css */
+/* line 2, ../scss/deck_resets.scss */
+.keydown.deck-container h1 {
+  font-weight: 400;
+  text-align: left;
+  padding-top: 0;
+}
+
+/* Reset deck.core.css */
+/* line 9, ../scss/deck_resets.scss */
+.csstransforms .deck-container .slide h1 {
+  padding: 0;
+  left: auto;
+  right: auto;
+  top: auto;
+  position: relative;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
